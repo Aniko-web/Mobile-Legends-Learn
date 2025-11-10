@@ -1,7 +1,7 @@
 import asyncio
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command
-from aiogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
+from aiogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton
 
 TOKEN = "8267691318:AAE7CE88EcEWAjnU4PrpHgycPj9aRivgEQI"
 
@@ -133,7 +133,7 @@ async def exp_handler(msg: Message):
 async def button_handler7(msg: Message):
     await msg.answer("   🩸 PASSIVE — Cursing Touch (Sha Residue)\n Ta’siri:\n      Har safar Yu Zhong dushmanga basic attack yoki skill bilan zarba berganda, u “Sha Residue” degan belgi qoldiradi.\n      Belgilar 5 taga yetganda dushman “Sha Energy” portlashini oladi va Yu Zhong o‘ziga HP qaytaradi (ya’ni lifesteal).\n      Passive’ning eng kuchli tomoni — jangda doimiy shifo olish (regen).\n      Belgilar 7 soniya ichida yo‘qoladi, lekin yangilanishi mumkin.\n 📘 Maslahat:\n      Har doim bir dushmanga ketma-ket zarba ber, belgilar 5 taga to‘lishi uchun.\n      Belgilar to‘lishi bilan skill 1 yoki 2 bilan combo qil, chunki passiv portlashi katta zarar beradi.\n      HP past bo‘lganda minion yoki jungleda passive bilan HP’ni qayta tiklab ol.")
 
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+
 
 button1 = ReplyKeyboardMarkup(
     keyboard=[
@@ -222,4 +222,5 @@ async def main() -> None:
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
